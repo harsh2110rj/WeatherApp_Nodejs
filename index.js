@@ -30,4 +30,5 @@ const server=http.createServer((req,res)=>{
            })
            }
 })
-server.listen(7000,'127.0.0.1');
+const port=process.env.port||7000;
+server.listen(port,'127.0.0.1');
